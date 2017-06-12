@@ -25,7 +25,7 @@ devtools::use_package("curl")
 #' a graph with a representation of these values,
 #' a general graph with the model
 #' and a NLS object with the results of appliying the NLS computation to the data.
-
+#' @export
 HRi <- function(x) {
   
   errmsg <- "The input must be a dataframe with three columns: recombination, adaptation and counts on 0-fold sites."
@@ -149,8 +149,7 @@ HRi <- function(x) {
 #' @param x Dataframe consisting of recombination and adaptation, and maybe 0-fold sites count data.
 #' @keywords Hill-Robertson
 #' @return A list consisting of a data frame with both models' AICs and two objects with both models.
-
-
+#' @export
 LVNLtest <- function(x) {
   
   errmsg <- "The input must be a dataframe with, at least, two columns: recombination and adaptation."
@@ -186,7 +185,7 @@ LVNLtest <- function(x) {
 #' @keywords PopFly
 #' @keywords Recombination
 #' @return A data frame with recombination values in rho/kb, as well as the chromosome, start and end positions of each value.
-
+#' @export
 rhokbPopFly <- function(population="RAL",window="100kb") {
   
   feature="rhokb"

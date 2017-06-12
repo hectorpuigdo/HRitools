@@ -1,8 +1,8 @@
 Package: HRitools
-Title: What the Package Does (one line, title case)
+Title: HRi analysis
 Version: 0.0.0.9000
-Authors@R: person("Héctor", "Puigdomènech", email = "hectorpuigdomenechgomez@gmail.com", role = c("aut", "cre"))
-Description: Several analyses regarding HRi.
+Authors@R: person("Hector", "Puigdomenech", email = "hectorpuigdomenechgomez@gmail.com", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
 Depends: R (>= 3.3.3)
 License: What license is it under?
 Encoding: UTF-8
