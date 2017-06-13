@@ -198,6 +198,7 @@ rhokbPopFly <- function(population="RAL",window="100kb") {
   curl::curl_download(filename,tmp)
   big <- rtracklayer::import(tmp, format="bw")
   
-  return(as.data.frame(big))
+  result <- as.data.frame(big)
+  return(result)
   
 }
