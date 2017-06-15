@@ -59,5 +59,3 @@ recombination_data <- rhokbPopFly("ZI","10kb")
 ----
 
 Happy R coding!
-
-![](https://media.giphy.com/media/3oEdvdmg0utG4LVBrW/giphy.gif)
