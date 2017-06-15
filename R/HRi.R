@@ -170,10 +170,13 @@ LVNLtest <- function(x) {
   resL <- lm(Y~X)
   
   aics <- AIC(resL,resNL)
+  comp <- anova(resL,resNL)
+  Ftest <- comp[[4]][1]
+  significance <- comp[[5]][1]
   rownames(aics) <- c("Linear","Curvilinear")
   
-  results <- list(aics,resL,resNL)
-  names(results) <- c("AIC","Linear model","Curvilinear model")
+  results <- list(aics,Ftest,significance,resL,resNL)
+  names(results) <- c("AIC","Ftest","Significance","Linear","Curvilinear")
   return(results)
   
 }
