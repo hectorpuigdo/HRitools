@@ -171,8 +171,8 @@ LVNLtest <- function(x) {
   
   aics <- AIC(resNL,resL)
   comp <- anova(resNL,resL)
-  Ftest <- comp[[4]][1]
-  significance <- comp[[5]][1]
+  Ftest <- comp[2,5]
+  significance <- comp[2,6]
   rownames(aics) <- c("Linear","Curvilinear")
   
   results <- list(aics,Ftest,significance,resL,resNL)
