@@ -1,6 +1,6 @@
-This README 📖 file introduces *HRitools*, a package created by Héctor Puigdomènech Gómez. *HRitools* is a tool created in order to analyse adaptation and recombination data with the purpose of **quantifying Hill-Robertson interference** (HRi) with a curvilinear model, as suggested by [Castellano et al. (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4794616/).
+This README file introduces *HRitools*, a package created by Héctor Puigdomènech Gómez. *HRitools* is a tool created in order to analyse adaptation and recombination data with the purpose of **quantifying Hill-Robertson interference** (HRi) with a curvilinear model, as suggested by [Castellano et al. (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4794616/).
 
-# Installation 🔧
+# Installation
 
 In order to use *HRitools* in your R session, it must be installed. Dependencies must be installed previously.
 
@@ -18,7 +18,7 @@ install_github("hectorpuigdo/HRitools")
 
 Then, the library can simply be loaded with the comand `library(HRitools) `.
 
-# Usage 📈
+# Usage
 
 Three functions are included within the package: **HRi**, **LVNLtest** and **rhokbPopFly**. Each function has its own documentation, which can be found by, for example, `?HRi`.
 
@@ -49,9 +49,9 @@ This function provides three objects as a result: a data frame with AIC results,
 
 ## rhokbPopFly
 
-This function is very useful for researchers who do not have the possibility to get exprimental *Drosophila melanogaster* population recombination data and need to find some. [Hervas et al. (2017)](https://doi.org/10.1093/bioinformatics/btx301) created [PopFly, the *Drosophila* population genomics browser](popfly.uab.cat), and it contains a lot of recombination data from different populations 🌍, so `rhokbPopFly` is a function to download and put recombination data into a data frame.
+This function is very useful for researchers who do not have the possibility to get exprimental *Drosophila melanogaster* population recombination data and need to find some population-scaled recombination data. [Hervas et al. (2017)](https://doi.org/10.1093/bioinformatics/btx301) created [PopFly, the *Drosophila* population genomics browser](popfly.uab.cat), and it contains a lot of recombination data from different populations, so `rhokbPopFly` is a function to download and put recombination data into a data frame.
 
-Population and window size must be specified, otherwise the Raleigh population dataset –RAL strain– from [Comeron, Ratnappan, and Bailin (2012)](https://doi.org/10.1371/journal.pgen.1002905) with a window size of 100kb is downloaded.
+Population and window size must be specified, otherwise the Raleigh —RAL— population recombination dataset with a window size of 100kb is downloaded.
 
 ```R
 recombination_data <- rhokbPopFly("ZI","10kb")
