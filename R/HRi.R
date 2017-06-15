@@ -163,9 +163,9 @@ LVNLtest <- function(x) {
   
   fo <- as.formula("Y~a-b*exp(-c*X)")
   
-  st <- expand.grid(a=seq(0,1,length.out=30), b=seq(0,20,length.out=30), c=seq(0,20,length.out=30))
-  first_res<-nls2::nls2(fo, start=st, algorithm="brute-force", control=nls.control(maxiter=length(X)))
-  resNL <- nls2::nls2(formula=fo, start=first_res,control=nls.control(maxiter=200))
+  st <- expand.grid(a=seq(0,1,length.out=30), b=seq(0,5,length.out=30), c=seq(0,5,length.out=30))
+  first_res<-nls2::nls2(fo, start=st, algorithm="brute-force", control=nls.control(maxiter=50,warnOnly = TRUE))
+  resNL <- nls2::nls2(formula=fo, start=first_res,control=nls.control(maxiter=200,warnOnly = TRUE))
   
   resL <- lm(Y~X)
   
