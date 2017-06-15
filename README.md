@@ -45,7 +45,7 @@ This function is designed to calculate HRi curvilinear and linear models in orde
 LVNLtest(dataset)
 ```
 
-This function provides three objects as a result: a data frame with AIC results, and the results of generating both linear and curvilinear models.
+This function provides five objects as a result: a data frame with AIC results, the result of an F-test, its significance level, and the results of generating both linear and curvilinear models.
 
 ## rhokbPopFly
 
