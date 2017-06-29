@@ -53,7 +53,7 @@ This function provides five objects as a result: a data frame with AIC results, 
 
 ## rhokbPopFly
 
-This function is very useful for researchers who do not have the possibility to get exprimental *Drosophila melanogaster* population recombination data and need to find some population-scaled recombination data. [Hervas et al. (2017)](https://doi.org/10.1093/bioinformatics/btx301) created [PopFly, the *Drosophila* population genomics browser](http://popfly.uab.cat), and it contains a lot of recombination data from different populations, so `rhokbPopFly` is a function to download and put recombination data into a data frame.
+This function is very useful for researchers who do not have the possibility to get expreimental *Drosophila melanogaster* population recombination data and need to find some population-scaled recombination data. [Hervas et al. (2017)](https://doi.org/10.1093/bioinformatics/btx301) created [PopFly, the *Drosophila* population genomics browser](http://popfly.uab.cat), and it contains a lot of recombination data from different populations, so `rhokbPopFly` is a function to download and put recombination data into a data frame.
 
 Population and window size must be specified, otherwise the Raleigh —RAL— population recombination dataset with a window size of 100kb is downloaded.
 
