@@ -2,16 +2,20 @@ This README file introduces *HRitools*, a package created by Héctor Puigdomène
 
 # Installation
 
-In order to use *HRitools* in your R session, it must be installed. Dependencies must be installed previously.
+In order to use *HRitools* in your R session, it must be installed. Dependencies must be installed previously. The mayority of packages can be installed as they are usually installed in R, but *rtracklayer* is a package inside Bioconductor, so its installation is a bit trickier. In fact, if Bioconductor is not installed in R, installation instructions can be found in [this link](http://bioconductor.org/install/). Then, all the dependencies ca be installed by following these instructions. 
 
 ```R
-install.packages(c("nls2","curl","rtacklayer","ggplot2"))
+install.packages(c("nls2","curl","ggplot2"))
+
+source("https://bioconductor.org/biocLite.R")
+biocLite("rtracklayer")
 ```
 
 Once dependencies have been installed, *devtools* is the package required to install *HRitools*, as well as all the packages which are installed from Github.
 
 ```R
 install.packages("devtools")
+
 library(devtools)
 install_github("hectorpuigdo/HRitools")
 ```
