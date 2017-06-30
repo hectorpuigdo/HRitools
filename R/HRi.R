@@ -50,6 +50,7 @@ HRi <- function(x) {
   C <- summary(res)$coefficients[3]
   A_err <- summary(res)$coefficients[4]
   sigma <- summary(res)$sigma
+  MDV <- B-A
   
   min_x <- min(X)
   max_x <- max(X)
@@ -124,7 +125,7 @@ HRi <- function(x) {
   results <- list(model_v,
                   loads[[1]],
                   ropt005,
-                  A,B,C,y,
+                  A,MDV,C,y,
                   loads,loads_graph,
                   general_graph,res)
   
